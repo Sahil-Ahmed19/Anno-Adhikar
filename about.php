@@ -34,6 +34,7 @@
                                 <h2 class="section-heading mb-4">
                                     <span class="section-heading-upper">About Us</span>
                                 </h2>
+                                <p>Hello i am sahil</p>
                                 <p>Anna Adhikar is a mission to end hunger and no wasting of food to make a hungry-free world. According to the latest survey, 1.3 billion tons of food is thrown as waste every year. Additionally, one-third of the food consumed is stated as leftovers. The focus of this project is to reduce the amount of food wasted and being used to the needy people. Therefore, this website is developed by which a person can donate food with their capacity and at the same time it also lets the organization to put their request on their requirements. Large manufacturers, supermarket chains, wholesalers, farmers, food brokers, organized community food, restaurants, caterers, corporate dining rooms, hotels, and other food establishments are all welcome to our website will promptly distribute perishable and prepared foods to hungry people in the communities and NGOs. Our organizations will pick up food donations free of charge, saving donors time and money.</p>
                             </div>
                         </div>
