@@ -36,42 +36,44 @@ if (!isset($_SESSION['organization'])){
         <div class="member-name">
         <?php echo "<h1>Welcome " . $_SESSION['organization'] . "</h1>"; ?>
         <br>
-        <br>
         <section class="organization">
             <h1 class="h-primary center">Updates</h1>
             <div id="ngo">
                 <div class="box">
-                    <h2 class="h-secondary center">Arslan</h2>
-                    <!-- <img src= "picngo.jpg" alt="image not available"> -->
-                    <p class="center">
-                        <h3 class="h-three center">ADDRESS:A/2 ABC SARANI KOLKATA-50</h3><br>
-                        <h3 class="h-three center">CONTACT:+91XXXXXXXXXX</h3>
-                        <h3 class="h-three center">QUANTITY OF FOOD(No. of person): 6</h3>
-                        <h3 class="h-three center">PICKUP BY:12.30</h3>
-                    </p>
-                </div>
+                <?php
+
+                $server = "localhost";
+                $user = "root";
+                $pass = "Sahil339273$";
+                $database = "updatefood";
+
+                $conn = mysqli_connect($server,$user,$pass,$database);
+
+                if(!$conn){
+                    die("<script>alert('Connection Failed.')</script>");
+                }
+
+                $selectquery = " SELECT * FROM foodup";
+                $query = mysqli_query($conn,$selectquery);
+
+                while($res = mysqli_fetch_assoc($query)){
+                    
+                ?>
                 <div id="ngo">
                     <div class="box">
-                        <h2 class="h-secondary center">Zeeshan</h2>
-                        <!-- <img src= "PICNGO2.jpg" alt="image not available"> -->
+                        <h2 class="h-secondary center"><?php echo $res['restaurant'] . "<br>"; ?></h2>
                         <p class="center">
-                            <h3 class="h-three center">ADDRESS:22/Q FUD ROAD KOLKATA-10</h3><br>
-                            <h3 class="h-three center">CONTACT:+91XXXXXXXXXX</h3>
-                            <h3 class="h-three center">QUANTITY OF FOOD(No. of person): 5</h3>
-                        <h3 class="h-three center">PICKUP BY:12.30</h3>
+                                <h3 class="h-three center">Address: <?php echo $res['address'] . "<br>"; ?></h3>
+                                <h3 class="h-three center">Landmark: <?php echo $res['landmark'] . "<br>"; ?></h3>
+                                <h3 class="h-three center">Contact: <?php echo $res['contact'] . "<br>"; ?></h3>
+                                <h3 class="h-three center">Email: <?php echo $res['email'] . "<br>"; ?></h3>
+                                <h3 class="h-three center">Food left for number of people: <?php echo $res['food'] . "<br>"; ?></h3>
+                                <h3 class="h-three center">Pickup Before: <?php echo $res['time'] . "<br>"; ?></h3>
                         </p>
-                    </div>
-                    <div id="ngo">
-                        <div class="box">
-                            <h2 class="h-secondary center">Royal Indian</h2>
-                            <!-- <img src= "PCNGO3.jpg" alt="image not available"> -->
-                            <p class="center">
-                                <h3 class="h-three center">ADDRESS:15-C UNB SARANI KOLKATA-17</h3><br>
-                                <h3 class="h-three center">CONTACT:+91XXXXXXXXXX</h3>
-                                <h3 class="h-three center">QUANTITY OF FOOD(No. of person): 5</h3>
-                        <h3 class="h-three center">PICKUP BY:12.30</h3>
-                            </p>
-            </div>
+                </div> 
+                <?php
+                }
+                ?>
         </section>
         <section class="centre">
         <a class="abc" href="logout.php">logout</a>

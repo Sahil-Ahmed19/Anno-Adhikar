@@ -21,7 +21,7 @@ if(isset($_POST['submit'])){
     $cpassword = md5($_POST['cpassword']);
 
     if($password == $cpassword){
-        $sql = "SELECT * FROM users WHERE email='$email'";
+        $sql = "SELECT * FROM orgusers WHERE email='$email'";
         $result = mysqli_query($conn , $sql);
         if($result->num_rows>0){
             echo "<script>alert('Email ALready Exists.')</script>";
