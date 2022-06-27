@@ -68,7 +68,7 @@ if(!$conn){
     die("<script>alert('Connection Failed.')</script>");
 }
 
-$selectquery = " SELECT * FROM users";
+$selectquery = " SELECT * FROM orgusers";
 $query = mysqli_query($conn,$selectquery);
 
 while($res = mysqli_fetch_assoc($query)){
