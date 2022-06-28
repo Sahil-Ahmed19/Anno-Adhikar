@@ -69,6 +69,7 @@ if (!isset($_SESSION['organization'])){
                                 <h3 class="h-three center">Email: <?php echo $res['email'] . "<br>"; ?></h3>
                                 <h3 class="h-three center">Food left for number of people: <?php echo $res['food'] . "<br>"; ?></h3>
                                 <h3 class="h-three center">Pickup Before: <?php echo $res['time'] . "<br>"; ?></h3>
+                                <h3 class="h-three center">images: <img src="<?php echo 'uploads/'.$res["file_name"];?>" height="100px" width="100px" alt="" /></h3>
                         </p>
                 </div> 
                 <?php
