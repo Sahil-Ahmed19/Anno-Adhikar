@@ -38,8 +38,7 @@ if (!isset($_SESSION['organization'])){
         <br>
         <section class="organization">
             <h1 class="h-primary center">Updates</h1>
-            <div id="ngo">
-                <div class="box">
+           
                 <?php
 
                 $server = "localhost";
@@ -59,8 +58,9 @@ if (!isset($_SESSION['organization'])){
                 while($res = mysqli_fetch_assoc($query)){
                     
                 ?>
-                <div id="ngo">
-                    <div class="box">
+                 <div id="ngo">
+                <div class="box">
+                   
                         <h2 class="h-secondary center"><?php echo $res['restaurant'] . "<br>"; ?></h2>
                         <p class="center">
                                 <h3 class="h-three center">Address: <?php echo $res['address'] . "<br>"; ?></h3>
@@ -69,14 +69,15 @@ if (!isset($_SESSION['organization'])){
                                 <h3 class="h-three center">Email: <?php echo $res['email'] . "<br>"; ?></h3>
                                 <h3 class="h-three center">Food left for number of people: <?php echo $res['food'] . "<br>"; ?></h3>
                                 <h3 class="h-three center">Pickup Before: <?php echo $res['time'] . "<br>"; ?></h3>
-                                <h3 class="h-three center">images: <img src="<?php echo 'uploads/'.$res["file_name"];?>" height="100px" width="100px" alt="" /></h3>
+                                <h3 class="h-three center"><img src="<?php echo 'uploads/'.$res["file_name"];?>" height="100px" width="100px" alt=""/></h3>
                         </p>
                 </div> 
                 <?php
                 }
                 ?>
+                
         </section>
-        <section class="centre">
+        <section class="centre1">
         <a class="abc" href="logout.php">logout</a>
         </section>
         <div>
