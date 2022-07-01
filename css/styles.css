@@ -11828,6 +11828,11 @@ font-weight: 800;
 
 #Restaurants {background-color: none;}
 #Organisations {background-color: none;}
-.centre{
-  align-items: center;
+.centre1{
+  text-align: center;
+}
+.bloghead{
+  margin: 20px;
+  color: white;
+  text-align: center;
 }

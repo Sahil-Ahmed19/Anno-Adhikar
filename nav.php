@@ -7,7 +7,7 @@
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.php">Home</a></li>
                         <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="about.php">About</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="">Blog</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="blogs.php">Blog</a></li>
                         <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="partners.php">Partners</a></li>
                         <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="loginregister.php">Register/Login</a></li>
                     </ul>

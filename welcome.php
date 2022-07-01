@@ -1,6 +1,7 @@
 <?php
 
 session_start();
+error_reporting(0);
 
 if (!isset($_SESSION['restaurant'])){
     header("Location: index.php" );
@@ -96,9 +97,9 @@ if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"])){
         <div class="te">
             <input type="datetime-local" name="time" value="<?php echo $time; ?>" required>
         </div>
-        <div>
-        Select Image File to Upload:
-        <input type="file" name="file">
+        <p>Upload image of food:</p>
+        <div class="te"> 
+        <input type="file" name="file" >
         </div>
         <button name='submit'>Submit</button>
         </form>
