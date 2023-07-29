@@ -7,16 +7,7 @@ if (!isset($_SESSION['restaurant'])){
     header("Location: index.php" );
 }
 
-$server = "localhost";
-$user = "root";
-$pass = "Sahil339273$";
-$database = "updatefood";
-
-$conn = mysqli_connect($server,$user,$pass,$database);
-
-if(!$conn){
-    die("<script>alert('Connection Failed.')</script>");
-}
+include 'configorg.php';
 $statusMsg = '';
 
 // File upload path

@@ -29,7 +29,7 @@
     <section>
 <?php
 
-        include 'config.php';
+        include 'configorg.php';
 
         $selectquery = " SELECT * FROM users";
         $query = mysqli_query($conn,$selectquery);
@@ -57,16 +57,7 @@
 <div id="Organisations" class="tabcontent">
     <section>
 <?php
-$server = "localhost";
-$user = "root";
-$pass = "Sahil339273$";
-$database = "mywebsite";
-
-$conn = mysqli_connect($server,$user,$pass,$database);
-
-if(!$conn){
-    die("<script>alert('Connection Failed.')</script>");
-}
+include 'configorg.php';
 
 $selectquery = " SELECT * FROM orgusers";
 $query = mysqli_query($conn,$selectquery);

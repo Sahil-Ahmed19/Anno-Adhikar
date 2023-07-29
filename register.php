@@ -1,7 +1,7 @@
 <?php
 
 
-include 'config.php';
+include 'configorg.php';
 
 error_reporting(0);
 

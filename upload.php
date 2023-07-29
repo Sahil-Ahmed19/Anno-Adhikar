@@ -1,17 +1,6 @@
 <?php
-// Include the database configuration file
-$dbHost     = "localhost";
-$dbUsername = "root";
-$dbPassword = "Sahil339273$";
-$dbName     = "updatefood";
-
-// Create database connection
-$db = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
-
+  include 'configorg.php';
 // Check connection
-if ($db->connect_error) {
-    die("Connection failed: " . $db->connect_error);
-}
 $statusMsg = '';
 
 // File upload path

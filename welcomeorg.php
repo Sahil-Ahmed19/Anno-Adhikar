@@ -41,17 +41,7 @@ if (!isset($_SESSION['organization'])){
            
                 <?php
 
-                $server = "localhost";
-                $user = "root";
-                $pass = "Sahil339273$";
-                $database = "updatefood";
-
-                $conn = mysqli_connect($server,$user,$pass,$database);
-
-                if(!$conn){
-                    die("<script>alert('Connection Failed.')</script>");
-                }
-
+                include 'configorg.php';
                 $selectquery = " SELECT * FROM foodup";
                 $query = mysqli_query($conn,$selectquery);
 

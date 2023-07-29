@@ -26,7 +26,7 @@ if(isset($_POST['submit'])){
         if($result->num_rows>0){
             echo "<script>alert('Email ALready Exists.')</script>";
         } else{
-            $sql = "INSERT INTO users (organization, address, landmark, contact, email, password)
+            $sql = "INSERT INTO orgusers (organization, address, landmark, contact, email, password)
                 VALUES ('$organization', '$address', '$landmark', '$contact', '$email', '$password')";
             $result = mysqli_query($conn , $sql);
             if($result){
