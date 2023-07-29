@@ -29,7 +29,7 @@
         <?php
 
 
-        include 'config.php';
+        include 'configorg.php';
 
         session_start();
 
